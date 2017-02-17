@@ -60,7 +60,7 @@ class squid3 (
   package { 'squid3_package': ensure => installed, name => $package_name }
 
   service { 'squid3_service':
-    enable    => true,
+    enable    => false,
     name      => $service_name,
     ensure    => running,
     restart   => "service ${service_name} reload",
