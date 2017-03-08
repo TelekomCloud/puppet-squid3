@@ -652,12 +652,14 @@ acl localnet src fe80::/10      # RFC 4291 link-local (directly plugged) machine
 acl SSL_ports port 443
 acl SSL_ports port 8443
 acl SSL_ports port 9443
+acl SSL_ports port 31943
 acl SSL_ports port 44300-44303
 acl Safe_ports port 80		# http
 acl Safe_ports port 21		# ftp
 acl Safe_ports port 443		# https
 acl Safe_ports port 8443	# https
 acl Safe_ports port 9443	# https
+acl Safe_ports port 31943	# https
 acl Safe_ports port 44300-44303	# dtag
 acl Safe_ports port 70		# gopher
 acl Safe_ports port 210		# wais
