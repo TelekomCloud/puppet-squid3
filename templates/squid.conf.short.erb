@@ -9,6 +9,8 @@ acl localnet src fc00::/7       # RFC 4193 local private network range
 acl localnet src fe80::/10      # RFC 4291 link-local (directly plugged) machines
 acl SSL_ports port 22
 acl SSL_ports port 443
+acl SSL_ports port 6443
+acl SSL_ports port 7443
 acl SSL_ports port 8443
 acl SSL_ports port 9443
 acl SSL_ports port 31943
@@ -17,6 +19,8 @@ acl Safe_ports port 80		# http
 acl Safe_ports port 21		# ftp
 acl Safe_ports port 22		# ssh
 acl Safe_ports port 443		# https
+acl Safe_ports port 6443	# https
+acl Safe_ports port 7443	# https
 acl Safe_ports port 8443	# https
 acl Safe_ports port 9443	# https
 acl Safe_ports port 31943	# https
